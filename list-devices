@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+lsblk -e 7

@@ -1,0 +1,36 @@
+#!/usr/bin/env bash
+
+
+# Debian packages
+sudo aptitude update > /dev/null
+sudo aptitude upgrade
+sudo aptitude update
+
+# Snap packages
+#sudo snap refresh
+
+# TexLive
+#sudo tlmgr update --self
+#sudo tlmgr update --all
+
+# R
+#R --quiet -e "update.packages(ask = FALSE, repos='https://cran.us.r-project.org')"
+
+
+# NPM
+#sudo npm install -g npm
+#sudo npm update
+
+# Hosts file
+/home/ak/opt/hblock/./hblock
+ls -shalt /etc/hosts
+
+
+# Updating Dropbox Python script
+#curl -o /home/ak/bin/dropbox "https://linux.dropbox.com/packages/dropbox.py"
+#chmod +x /home/ak/bin/dropbox
+#ls -shalt /home/ak/bin/dropbox
+#dropbox update
+
+
+update-file-database
