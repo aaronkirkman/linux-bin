@@ -22,8 +22,9 @@ sudo aptitude update
 #sudo npm update
 
 # Hosts file
-/home/ak/opt/hblock/./hblock
-ls -shalt /etc/hosts
+cd ~/opt/hblock/
+git pull
+./hblock
 
 
 # Updating Dropbox Python script
