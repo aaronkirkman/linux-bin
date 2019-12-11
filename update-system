@@ -3,7 +3,6 @@
 # Debian packages
 sudo aptitude update > /dev/null
 sudo aptitude upgrade
-sudo aptitude update
 
 # Hosts file
 cd ~/opt/hblock/
