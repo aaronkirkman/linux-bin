@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 
-sudo updatedb --prunepaths="/mnt /media"
+sudo updatedb --prunepaths="/mnt /media /run"
 
