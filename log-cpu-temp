@@ -1,6 +1,11 @@
 #!/usr/bin/env bash
 
 logfile="$HOME/.cputemperature.log"
-timestamp=$(TZ=$(cat /etc/timezone) date +"%a %b %d %R %Z")
-temp=$(acpi -t | cut -f 4,6 -d " ")
-echo "$timestamp	$temp" >> "$logfile"
+
+if [ "$1" = "hist" ]; then
+	cut -f 2 "$logfile" | sort | uniq -c
+else
+	timestamp=$(TZ=$(cat /etc/timezone) date +"%a %b %d %R %Z")
+	temp=$(acpi -t | cut -f 4,6 -d " ")
+	echo "$timestamp	$temp" >> "$logfile"
+fi
