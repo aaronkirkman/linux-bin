@@ -11,7 +11,7 @@ git pull
 
 # Firefox script
 cd ~/opt/user.js
-cp user.js ~/.mozilla/firefox/$(firefox-profile)/user.js
+cp user.js ~/.mozilla/firefox/$(firefox-profile)/user.js -v
 
 # File database
 update-file-database
