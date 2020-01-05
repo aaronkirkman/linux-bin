@@ -9,9 +9,9 @@ cd ~/opt/hblock/
 git pull
 ./hblock
 
-# Firefox script
+# Firefox preferences
 cd ~/opt/user.js
-cp user.js ~/.mozilla/firefox/$(firefox-profile)/user.js -v
+./deploy
 
 # File database
 update-file-database
