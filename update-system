@@ -13,5 +13,8 @@ git pull
 cd ~/opt/user.js
 ./deploy
 
+# Refresh PGP keys
+gpg --refresh-keys --keyserver keys.openpgp.org
+
 # File database
 update-file-database
