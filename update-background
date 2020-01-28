@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+feh --bg-center ~/.log/background.png
+
