@@ -4,4 +4,4 @@ if [ $# -lt 2 ]; then
     echo -e "Usage:\n\tcompress-directory <directory> <archive>"
     exit 1
 fi
-tar -cvf -  "$1" | pigz -9 - > "$2"
+tar -cvf - "$1" | pigz -9 - > "$2"
